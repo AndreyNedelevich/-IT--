@@ -6,7 +6,7 @@ const btn = document.querySelector("#btn");
 const resaltExchaning = document.querySelector("#sum");
 
 const exchange = function () {
-  if (bitcoinPrice.value <= 0 && money.value <= 0) {
+  if (bitcoinPrice.value <= 0 || money.value <= 0) 
     return alert("Invalid number");
   }
 
